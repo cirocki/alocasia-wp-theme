@@ -18,18 +18,49 @@ Use it to make something cool, have fun, and share what you've learned.
 Alocasia Theme is based on Underscores https://underscores.me/, (C) 2012-2020 Automattic, Inc.
 Underscores is distributed under the terms of the GNU GPL v2 or later.
 
-Normalizing styles have been helped along thanks to the fine work of
-Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 */
 
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
+	- Variables
 # Core
 	- Reset
-	- sthg
+	- Body
+# Elements
+	- Links
+	- Buttons
+	- Media
+	- Tables
+# Components
+	- Header
+	- Footer
+# Pages
+	- Index
+	- About
 --------------------------------------------------------------*/
+// Import variables and mixins.
+@import "variables/variables";
 
-/* Reset
+/* Core
 --------------------------------------------- */
 @import "core/reset";
+@import "core/body";
+
+/* Elements
+--------------------------------------------- */
+@import "elements/links";
+@import "elements/buttons";
+@import "elements/media";
+@import "elements/tables";
+
+/* Components
+--------------------------------------------- */
+@import "components/header/header";
+@import "components/footer/footer";
+
+/* Pages
+--------------------------------------------- */
+@import "pages/index/hero";
+
+
