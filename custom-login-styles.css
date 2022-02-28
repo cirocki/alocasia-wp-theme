@@ -1,0 +1,80 @@
+/* Check how to customize your login page here:
+https://blog.templatetoaster.com/wordpress-custom-login-page/ */
+
+Body.login {
+    background: #000;
+    color: white;
+}
+
+#login h1 a {
+    background-image: url("screenshot.jpg");
+    background-size: 75px;
+}
+
+.login form {
+    padding: 26px 24px 34px;
+    background: #111;
+    border: 1px solid #222;
+    box-shadow: none;
+}
+
+.login #backtoblog a,
+.login #nav a {
+    color: #fff;
+}
+
+
+.login #backtoblog a:hover,
+.login #nav a:hover,
+.login h1 a:hover {
+    color: #1974e8;
+}
+
+.wp-core-ui .button-primary {
+    background: #1974e8;
+    border-color: #1974e8;
+    color: #fff;
+}
+
+.wp-core-ui .button-primary.focus,
+.wp-core-ui .button-primary.hover,
+.wp-core-ui .button-primary:focus,
+.wp-core-ui .button-primary:hover {
+    background: #1974e8;
+    border-color: #1974e8;
+}
+
+.login form .input,
+.login form input[type="checkbox"],
+.login input[type="text"] {
+    background: #000;
+}
+
+input[type="color"],
+input[type="date"],
+input[type="datetime-local"],
+input[type="datetime"],
+input[type="email"],
+input[type="month"],
+input[type="number"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="text"],
+input[type="time"],
+input[type="url"],
+input[type="week"],
+select,
+textarea {
+    color: #fff;
+    border: 1px solid #222;
+}
+
+.login #login_error, .login .message, .login .success {
+    background-color: #111111;
+
+  }
+
+.language-switcher {
+    display: none;
+}
