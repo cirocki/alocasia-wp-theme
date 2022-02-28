@@ -16,7 +16,6 @@ html {
   
   
   a {
-    color: $primary;
     text-decoration: none;
     cursor: pointer;
     transition: $defaultTransition;
@@ -28,7 +27,8 @@ html {
   h4,
   h5,
   h6 {
-    font-weight: normal;
+    font-weight: 400;
+    text-transform: none;
   }
   
   main {

@@ -45,33 +45,21 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 /* Core
 --------------------------------------------- */
 /*** The new CSS Reset - version 1.2.0 (last updated 23.7.2021) ***/
-/* Remove all the styles of the "User-Agent-Stylesheet", except for the 'display' property */
 *:where(:not(iframe, canvas, img, svg, video):not(svg *)) {
 	all: unset;
 	display: revert;
 }
 
-/* Preferred box-sizing value */
 *,
 *::before,
 *::after {
 	box-sizing: border-box;
 }
 
-/*
-      Remove list styles (bullets/numbers)
-      in case you use it combine with normalize.css
-  */
 ol, ul {
 	list-style: none;
 }
 
-/* For images to not be able to exceed their container */
-img {
-	max-width: 100%;
-}
-
-/* removes spacing between cells in tables */
 table {
 	border-collapse: collapse;
 }
@@ -98,7 +86,6 @@ body {
 }
 
 a {
-	color: #038484;
 	text-decoration: none;
 	cursor: pointer;
 	transition: all 0.2s;
@@ -110,7 +97,8 @@ h3,
 h4,
 h5,
 h6 {
-	font-weight: normal;
+	font-weight: 400;
+	text-transform: none;
 }
 
 main {
@@ -125,6 +113,14 @@ main {
 
 /* Elements
 --------------------------------------------- */
+a {
+	color: #038484;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
 a:focus {
 	outline: thin dotted;
 }
@@ -161,7 +157,6 @@ a:hover, a:active {
 	}
 }
 
-/* Make sure embeds and iframes fit their containers. */
 embed,
 iframe,
 object {

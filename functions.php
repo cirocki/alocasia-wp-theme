@@ -179,3 +179,21 @@ require get_template_directory() . '/inc/customizer.php';
 if (defined('JETPACK__VERSION')) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
+
+// CUSTOM ADMIN PANEL COLOR SCHEME 
+// CREATE YOUR STYLES HERE 
+// https://wpadmincolors.com/ 
+function alocasia_admin_color_scheme()
+{
+	//Get the theme directory
+	$theme_dir = get_stylesheet_directory_uri();
+
+	//alocasia
+	wp_admin_css_color(
+		'alocasia',
+		__('alocasia'),
+		$theme_dir . '/alocasia.css',
+		array('#111111', '#ffffff', '#ff0000', '#4a987a')
+	);
+}
+add_action('admin_init', 'alocasia_admin_color_scheme');
