@@ -39,3 +39,10 @@ html {
     }
   }
   
+
+  .container {
+    max-width: $containerWidth;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 3vw;
+  }

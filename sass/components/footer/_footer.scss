@@ -1,0 +1,46 @@
+.site-footer {
+    background: $headerBgColor;
+    color: $footerColor;
+    font-size: 14px;
+    position: relative;
+    clear: both;
+
+    .footer-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 2rem;
+        padding: 4rem 0;
+        align-items: center;
+        @media ($mmd) {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            grid-gap: .5rem;
+        }
+        @media ($mxs) {
+            padding: 2rem 0;
+        }
+
+        .copyrights {
+            .footer-seo-text {
+                padding-top: 4px;
+                @media ($mmd) {
+                    display: none;
+                }
+            }
+        }
+
+        .author {
+            text-align: right;
+            @media ($mxs) {
+                display: none;
+            }
+
+            a {
+                color: $footerColor;
+            }
+        }
+    }
+}

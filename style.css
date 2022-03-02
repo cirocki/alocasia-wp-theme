@@ -111,6 +111,13 @@ main {
 	}
 }
 
+.container {
+	max-width: 1440px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0 3vw;
+}
+
 /* Elements
 --------------------------------------------- */
 a {
@@ -174,6 +181,63 @@ figure {
 
 /* Components
 --------------------------------------------- */
+.site-footer {
+	background: #111;
+	color: #7d7d7d;
+	font-size: 14px;
+	position: relative;
+	clear: both;
+}
+
+.site-footer .footer-wrapper {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 2rem;
+	padding: 4rem 0;
+	align-items: center;
+}
+
+@media (max-width: 768px) {
+	.site-footer .footer-wrapper {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		grid-gap: .5rem;
+	}
+}
+
+@media (max-width: 399px) {
+	.site-footer .footer-wrapper {
+		padding: 2rem 0;
+	}
+}
+
+.site-footer .footer-wrapper .copyrights .footer-seo-text {
+	padding-top: 4px;
+}
+
+@media (max-width: 768px) {
+	.site-footer .footer-wrapper .copyrights .footer-seo-text {
+		display: none;
+	}
+}
+
+.site-footer .footer-wrapper .author {
+	text-align: right;
+}
+
+@media (max-width: 399px) {
+	.site-footer .footer-wrapper .author {
+		display: none;
+	}
+}
+
+.site-footer .footer-wrapper .author a {
+	color: #7d7d7d;
+}
+
 /* Pages
 --------------------------------------------- */
 
