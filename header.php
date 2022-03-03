@@ -1,59 +1,53 @@
 <?php
+
 /**
  * The header for our theme
- *
  * This is the template that displays all of the <head> section and everything up until <div id="content">
- *
- * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
- *
- * @package Alocasia_Theme
  */
 
 ?>
-<!doctype html>
-<html <?php language_attributes(); ?>>
-<head>
-	<meta charset="<?php bloginfo( 'charset' ); ?>">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="profile" href="https://gmpg.org/xfn/11">
 
-	<?php wp_head(); ?>
-</head>
+<?php get_template_part('head'); ?>
+
 
 <body <?php body_class(); ?>>
-<?php wp_body_open(); ?>
-<div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'alocasia_theme' ); ?></a>
+	<?php wp_body_open(); ?>
+	<div id="page" class="site">
+		<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e('Skip to content', 'alocasia_theme'); ?></a>
+		<header class="main-header">
+			<div class="container">
+				<div class="menu-wrapper">
 
-	<header id="masthead" class="site-header">
-		<div class="site-branding">
-			<?php
-			the_custom_logo();
-			if ( is_front_page() && is_home() ) :
-				?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-				<?php
-			else :
-				?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-				<?php
-			endif;
-			$alocasia_theme_description = get_bloginfo( 'description', 'display' );
-			if ( $alocasia_theme_description || is_customize_preview() ) :
-				?>
-				<p class="site-description"><?php echo $alocasia_theme_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
-			<?php endif; ?>
-		</div><!-- .site-branding -->
-
-		<nav id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'alocasia_theme' ); ?></button>
-			<?php
-			wp_nav_menu(
-				array(
-					'theme_location' => 'menu-1',
-					'menu_id'        => 'primary-menu',
-				)
-			);
-			?>
-		</nav><!-- #site-navigation -->
-	</header><!-- #masthead -->
+					<div class="top-part">
+						<div class="branding-wrapper">
+							<a class="logo" href="<?php echo esc_url(home_url('/')); ?>">
+								<img src="<?php echo  get_theme_file_uri(); ?>/assets/images/tdsk_logo_white.svg" alt="<?php bloginfo('name'); ?> logo">
+							</a>
+						</div>
+						<div class="hamburger-wrapper">
+							<div id="navbar-toggler" aria-expanded="false" aria-label="Toggle navigation" class="hamburger hamburger--spin js-hamburger ">
+								<div class="hamburger-box">
+									<div class="hamburger-inner">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="bot-part">
+						<nav class="nav-primary">
+							<?php
+							wp_nav_menu(
+								array(
+									'theme_location' => 'menu-1',
+									'menu_id'        => 'menu-primary-menu',
+								)
+							);
+							?>
+						</nav>
+						<div class="more-info">
+							<!-- You can use this place to show phone or socials. -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>

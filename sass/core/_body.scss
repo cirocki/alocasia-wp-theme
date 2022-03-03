@@ -46,3 +46,11 @@ html {
     margin-right: auto;
     padding: 0 3vw;
   }
+
+  // KEEP FOOTER BOTTOM EVEN IF CONTENT IS SHORTER THAN VIEWPORT HEIGHT 
+  #page {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
