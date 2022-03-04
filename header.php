@@ -21,7 +21,7 @@
 					<div class="top-part">
 						<div class="branding-wrapper">
 							<a class="logo" href="<?php echo esc_url(home_url('/')); ?>">
-								<img src="<?php echo  get_theme_file_uri(); ?>/assets/images/tdsk_logo_white.svg" alt="<?php bloginfo('name'); ?> logo">
+								<img src="<?php echo  get_theme_file_uri(); ?>/assets/img/alocasia-logo.svg" alt="<?php bloginfo('name'); ?> logo">
 							</a>
 						</div>
 						<div class="hamburger-wrapper">
@@ -45,6 +45,7 @@
 							?>
 						</nav>
 						<div class="more-info">
+							<a href="tel:+666666666">666-666-666</a>
 							<!-- You can use this place to show phone or socials. -->
 						</div>
 					</div>

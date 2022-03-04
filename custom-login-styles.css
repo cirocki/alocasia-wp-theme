@@ -7,8 +7,9 @@ Body.login {
 }
 
 #login h1 a {
-    background-image: url("screenshot.jpg");
-    background-size: 75px;
+    background-image: url("./assets/img/alocasia-logo.svg");
+    background-size: 240px;
+    width: 100%;
 }
 
 .login form {
