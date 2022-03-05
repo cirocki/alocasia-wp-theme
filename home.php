@@ -4,10 +4,11 @@ get_header();
 ?>
 
 <main id="primary" class="site-main">
-    <h1>HOME PAGE</h1>
+    <?php get_template_part('/pages/home/hero'); ?>
 </main>
 
 <?php
+
 
 // UNCOMMENT SIDEBAR WHEN YOU NEED IT 
 // get_sidebar();
