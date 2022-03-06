@@ -205,3 +205,11 @@ function my_custom_login()
 	echo '<link rel="stylesheet" type="text/css" href="' . get_bloginfo('stylesheet_directory') . '/custom-login-styles.css" />';
 }
 add_action('login_head', 'my_custom_login');
+
+
+// CHANGE EXCERPT LENGTH 
+function wpdocs_custom_excerpt_length($length)
+{
+	return 20;
+}
+add_filter('excerpt_length', 'wpdocs_custom_excerpt_length', 999);

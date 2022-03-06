@@ -1,0 +1,17 @@
+.post-short {
+    border: 1px solid #ccc;
+
+    .post__content {
+        padding: 2rem;
+        .post__title {
+            font-size: 2.4rem;
+        }
+    }
+
+    .post__image {
+        a {
+            display: flex;
+        }
+    }
+
+}

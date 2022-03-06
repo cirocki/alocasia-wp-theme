@@ -59,9 +59,11 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 --------------------------------------------- */
 @import "components/header/header";
 @import "components/footer/footer";
+@import "components/short-article/short-article";
 
 /* Pages
 --------------------------------------------- */
 @import "pages/index/hero";
+@import "pages/index/recent";
 
 

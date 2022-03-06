@@ -5,6 +5,8 @@ get_header();
 
 <main id="primary" class="site-main">
     <?php get_template_part('/pages/home/hero'); ?>
+    <?php get_template_part('/pages/home/recent'); ?>
+
 </main>
 
 <?php
